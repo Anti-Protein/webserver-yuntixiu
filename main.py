@@ -62,4 +62,5 @@ if __name__ == "__main__":
     app = web.application(urls, globals())
     app.internalerror = internalerror
     app.notfound = notfound
-    app.run()
+    application = app.wsgifunc()
+    #app.run()
